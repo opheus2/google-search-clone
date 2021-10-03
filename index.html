@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Google Clone</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/app.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <nav class="nav">
+      <div class="nav__left mobile-nav">
+        <div class="mobile-nav-icon" id="mobile-menu-opener">
+          <svg
+            style="fill: #70757a; width: 24px; height: 24px"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+          </svg>
+        </div>
+        <a href="#" class="active">ALL</a>
+        <a href="#">IMAGES</a>
+      </div>
+      <div class="nav__right">
+        <div class="links mobile-hidden">
+          <a href="#">Gmail</a>
+          <a href="#">Images</a>
+        </div>
+        <div class="icons">
+          <div class="dots-icon">
+            <a href="#">
+              <svg class="gb_Pe" focusable="false" viewBox="0 0 24 24">
+                <path
+                  d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="profile-icon">
+            <!-- <a href="#" class="profile-icon">
+              <img
+                src="https://lh3.googleusercontent.com/ogw/ADea4I5H6khSgWrEodCR6iM-N-vmcff_4JNGxLsStNzlag=s32-c-mo"
+                alt="profile_image"
+              />
+            </a> -->
+            <a href="#" class="sign-in-button" role="button">
+              Sign in
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <aside class="mobile-sidebar overlay">
+      <div class="mobile-menu">
+        <div class="mobile-menu__logo">
+          <img
+            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
+            alt="mobile logo"
+          />
+        </div>
+        <ul>
+          <li>
+            <i data-feather="home"></i>
+            <span>Home</span>
+          </li>
+          <li>
+            <i data-feather="clock"></i>
+            <span>Search history</span>
+          </li>
+          <li>
+            <i data-feather="bookmark"></i>
+            <span>Collections</span>
+          </li>
+          <li>
+            <i data-feather="search"></i>
+            <span>Offline searches</span>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <section class="main">
+      <div class="logo">
+        <img
+          src="https://www.google.com/logos/doodles/2021/nigeria-independence-day-2021-6753651837109090-l.webp"
+          alt="desktop logo"
+        />
+        <!-- <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png" alt="desktop logo"> -->
+      </div>
+      <div class="search-main">
+        <div class="search-input">
+          <div class="search-icon">
+            <svg
+              focusable="false"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+              ></path>
+            </svg>
+          </div>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            role="search"
+            aria-label="search"
+          />
+          <div class="microphone-icon">
+            <svg
+              class="goxjub"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="#4285f4"
+                d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z"
+              ></path>
+              <path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path>
+              <path
+                fill="#fbbc04"
+                d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z"
+              ></path>
+              <path
+                fill="#ea4335"
+                d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="search-buttons mobile-hidden">
+          <button class="btn">Google Search</button>
+          <button class="btn">I'm Feeling Lucky</button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-menu">
+        <div class="footer-left">
+          <a href="#">About</a>
+          <a href="#">Advertising</a>
+          <a href="#">Business</a>
+          <a href="#" class="mobile-hidden">How Search works</a>
+        </div>
+        <div class="footer-middle">
+          <a
+            class="carbon-link"
+            href="https://sustainability.google/commitments/?utm_source=googlehpfooter&amp;utm_medium=housepromos&amp;utm_campaign=bottom-footer&amp;utm_content="
+            ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://sustainability.google/commitments/%3Futm_source%3Dgooglehpfooter%26utm_medium%3Dhousepromos%26utm_campaign%3Dbottom-footer%26utm_content%3D&amp;ved=0ahUKEwiOvd_t76nzAhXtxjgGHVmwDe4QiM8HCBY"
+          >
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC"
+              class="carbon-icon"
+              alt=""
+              data-atf="1"
+              data-frt="0"
+            />
+            <span class="carbon-text"> Carbon neutral since 2007 </span>
+          </a>
+        </div>
+        <div class="footer-right">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Settings</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      feather.replace();
+
+      const mobileNav = document.querySelector(".mobile-nav-icon");
+      const mobileSideBar = document.querySelector(".mobile-sidebar");
+      const mobileMenu = document.querySelector(".mobile-menu");
+
+      mobileNav.addEventListener("click", (e) => {
+        console.log(e.target);
+        mobileSideBar.style.display = "block";
+        mobileMenu.classList.toggle("active");
+      });
+
+      mobileSideBar.addEventListener("click", (e) => {
+        if (e.target.classList.contains("overlay")) {
+          mobileMenu.classList.toggle("active");
+          mobileSideBar.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
