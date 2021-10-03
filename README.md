@@ -1,9 +1,9 @@
 ## Google Search Home Page Clone
 
 #### Details
-Css, Javascript, Html.
-Responsive on all screensizes.
-Feather Icons for mobile sidebar icons.
+Css, Javascript, Html.  
+Responsive on all screensizes.  
+Feather Icons for mobile sidebar icons.  
 
 #### Demo Link
 
