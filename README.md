@@ -1,13 +1,13 @@
-##Google Search Home Page Clone
+## Google Search Home Page Clone
 
-####Details
+#### Details
 Css, Javascript, Html.
 Responsive on all screensizes.
 Feather Icons for mobile sidebar icons.
 
-####Demo Link
+#### Demo Link
 
-[View](http://google.com)
+[View](https://opheus2.github.io/google-search-clone/)
 
 
 Todo:
